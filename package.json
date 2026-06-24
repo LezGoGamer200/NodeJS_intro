@@ -8,11 +8,19 @@
   "type": "commonjs",
   "main": "scripts.js",
   "scripts": {
-    "start": "node scripts.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "nodemon": "^3.1.14"
+    "mongoose": "^9.7.2",
+    "nodemon": "^3.1.14",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "mongodb": "^7.3.0",
+    "swagger-autogen": "^2.23.7"
   }
 }
