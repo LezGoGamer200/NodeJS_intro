@@ -1,5 +1,9 @@
-const myController = require("../controllers");
 const routes = require("express").Router();
-routes.get("/", myController.awsomeFunction);
+const myController = require("../controllers");
+
+// routes.get("/", myController.awsomeFunction);
+routes.get("/", myController.getAllStudents);
 routes.get("/ttech", myController.TTech_Func);
+// routes.get("/gather", myController.getAllStudents);
+
 module.exports = routes;
