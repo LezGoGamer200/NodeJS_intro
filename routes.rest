@@ -3,3 +3,36 @@ GET http://localhost:3000/ttech HTTP/1.1
 
 ### get the root path
 GET http://localhost:3000/ HTTP/1.1
+
+### get all students
+GET http://localhost:3000/students HTTP/1.1
+
+### get one student
+GET http://localhost:3000/students/6a3e9c974a50fbca8c961a5e HTTP/1.1
+
+### create a student
+POST http://localhost:3000/students HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Made Up",
+    "lastName": "Name",
+    "email": "randomEmail@madeupplace.com",
+    "age": "30",
+    "currentCollege": "Imaginary Academy"
+}
+
+### update a student
+PATCH http://localhost:3000/students/6a42936ac6561c7abd89c8ed
+content-type: application/json
+
+{
+    "firstName": "Burger",
+    "lastName": "King",
+    "email": "randomEmail@madeupplace.com",
+    "age": "107",
+    "currentCollege": "Imaginary Academy"
+}
+
+### delete a student
+DELETE http://localhost:3000/students/6a42982062816650f3466033
