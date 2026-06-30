@@ -8,4 +8,7 @@ routes.get("/ttech", myController.TTech_Func);
 // student routes
 routes.use("/students", require("./students"));
 
+// auth routes
+routes.use("/auth", require("./auth"));
+
 module.exports = routes;

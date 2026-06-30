@@ -23,7 +23,7 @@ content-type: application/json
 }
 
 ### update a student
-PATCH http://localhost:3000/students/6a42936ac6561c7abd89c8ed
+PATCH http://localhost:3000/students/6a42936ac6561c7abd89c8ed HTTP/1.1
 content-type: application/json
 
 {
@@ -35,4 +35,12 @@ content-type: application/json
 }
 
 ### delete a student
-DELETE http://localhost:3000/students/6a42982062816650f3466033
+DELETE http://localhost:3000/students/6a42982062816650f3466033 HTTP/1.1
+
+
+### Registration page
+POST  http://localhost:3000/auth/register HTTP/1.1
+### Login page
+POST  http://localhost:3000/auth/login HTTP/1.1
+### Logout page
+POST  http://localhost:3000/auth/logout HTTP/1.1
